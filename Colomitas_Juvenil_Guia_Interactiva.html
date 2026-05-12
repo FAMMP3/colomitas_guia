@@ -156,11 +156,7 @@ body{font-family:var(--font-sans,system-ui,sans-serif);background:var(--color-ba
     <span class="header-badge header-badge-juv">Categoría Juvenil</span>
   </div>
   <div class="header-title">Las Colomitas <span>· Hacienda Colomos</span></div>
-  <div class="header-sub">Tapatía de Charros · 13–17 años · Guadalajara, Jalisco</div>
-  <div class="diff-strip">
-    <i class="ti ti-info-circle" style="flex-shrink:0;font-size:15px;margin-top:1px" aria-hidden="true"></i>
-    <span>Esta guía cubre las reglas específicas de Juvenil. La estructura de la rutina es igual a Libre, pero hay ejercicios adicionales disponibles y algunas distancias difieren.</span>
-  </div>
+  <div class="header-sub">13–17 años · Esta guía cubre las reglas específicas de Juvenil. Misma estructura que Libre con ejercicios adicionales disponibles.</div>
   <div style="margin-top:.75rem">
     <div class="countdown" id="cdown"><i class="ti ti-alarm" aria-hidden="true"></i><span id="cdown-txt">cargando...</span></div>
   </div>
@@ -890,7 +886,7 @@ function chk(li){
 }
 function tog(id){document.getElementById(id).classList.toggle('open')}
 (function(){
-  const t=new Date();t.setDate(t.getDate()+26);
+  const t=new Date();t.setDate(t.getDate()+14);
   function u(){
     const d=t-new Date();
     if(d<=0){document.getElementById('cdown-txt').textContent='¡Es hoy!';return;}
